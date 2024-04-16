@@ -21,7 +21,8 @@
     "eslint-config-google": "^0.14.0",
     "next": "14.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sass": "^1.75.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.0.2",

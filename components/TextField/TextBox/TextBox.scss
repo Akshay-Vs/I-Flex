@@ -1,0 +1,22 @@
+@import '../../../shared/styles/Typography.scss';
+
+.textbox {
+  &__textarea {
+    @include font(38px);
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: transparent;
+    border: 2px solid #5c5c5c;
+    border-radius: 30px;
+    padding: 30px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #5c5c5c;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Metadata } from 'next';
-import './globals.css';
+import './globals.scss';
 
 /**
  * Metadata for the root layout
