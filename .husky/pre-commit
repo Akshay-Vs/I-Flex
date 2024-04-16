@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🚀 Styling, Testing, and building the project before committing 🛠️"
+
+npm run check-types || 
+(
+  echo "❌ Type checking failed"
+  false;
+)
+
+npm run check-format || 
+(
+  echo "❌ Format checking failed"
+  false;
+)
+
+npm run check-lint || 
+(
+  echo "❌ Lint checking failed"
+  false;
+)
+
+#if everything is working
+echo "✅ Tests passed successfully"
+
+npm run build || 
+(
+  echo "❌ Build Failed"
+  false;
+)
+
+echo "✅ Build successful"
