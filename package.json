@@ -10,7 +10,7 @@
     "prepare": "husky && husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
-    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js --ignore-pattern 'dist/'",
     "lint-fix": "eslint . --ext ts --ext tsx --ext js  --fix",
     "format": "prettier --write .",
     "test-all": "npm run check-types && npm run check-lint && npm run check-format && npm run format && npm run build"
