@@ -12,13 +12,24 @@ npm run check-types ||
 npm run check-format || 
 (
   echo "❌ Format checking failed"
-  false;
+  echo "Running auto format (fix)"
+  npm run format || 
+  (
+    echo "❌ Format auto-fixing failed"
+    false
+  )
+  false
 )
 
 npm run check-lint || 
 (
   echo "❌ Lint checking failed"
-  false;
+  echo "Running auto lint (fix)"
+  npm run lint-fix || (
+    echo "❌ Lint auto-fixing failed"
+    false
+  )
+  false
 )
 
 #if everything is working
