@@ -23,6 +23,6 @@
     "jest": true
   },
   "rules": {
-    "spaced-comment": "warn"
+    "spaced-comment": "off"
   }
 }
