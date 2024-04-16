@@ -2,7 +2,10 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "Running all tests before pushing 🚀"
-npm run test-all (
-  echo "❌ Tests failed"
-  false
+npm run build || 
+(
+  echo "❌ Build Failed"
+  false;
 )
+
+echo "✅ Build successful"

@@ -35,10 +35,3 @@ npm run check-lint ||
 #if everything is working
 echo "✅ Tests passed successfully"
 
-npm run build || 
-(
-  echo "❌ Build Failed"
-  false;
-)
-
-echo "✅ Build successful"
