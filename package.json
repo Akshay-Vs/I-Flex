@@ -16,6 +16,8 @@
     "test-all": "npm run check-types && npm run check-lint && npm run check-format && npm run format && npm run build"
   },
   "dependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "eslint-config-google": "^0.14.0",
     "next": "14.2.1",
     "react": "^18",
@@ -37,11 +39,11 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.34.1",
     "globals": "^15.0.0",
+    "husky": "^8.0.0",
     "postcss": "^8",
     "prettier": "3.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "*",
-    "typescript-eslint": "^7.7.0",
-    "husky": "^8.0.0"
+    "typescript-eslint": "^7.7.0"
   }
 }
